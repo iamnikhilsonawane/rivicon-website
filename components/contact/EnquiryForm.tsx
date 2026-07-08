@@ -28,9 +28,20 @@ export default function EnquiryForm() {
     setErrors({});
     setStatus("loading");
 
-    // Replace this block with your real form submission (e.g., Formspree, EmailJS, API route)
-    await new Promise((r) => setTimeout(r, 1200));
-    setStatus("success");
+    try {
+      const res = await fetch("https://formspree.io/f/xjgqqvyv", {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+      if (res.ok) {
+        setStatus("success");
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   }
 
   if (status === "success") {
