@@ -1,0 +1,7 @@
+node_modules
+.next
+.env*
+*.local
+.DS_Store
+public/images/swab-product.png
+public/images/lancet-product.png
