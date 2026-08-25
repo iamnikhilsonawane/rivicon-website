@@ -27,7 +27,7 @@ export default function ProductsPage() {
               <span className="text-brand-orange">Consumables</span>
             </h1>
             <p className="section-subheading">
-              ISO certified, EO sterilized, individually sealed — every product built to
+              ISO certified, gamma radiation sterilized, individually sealed — every product built to
               the standards that patient care demands.
             </p>
           </AnimateOnScroll>

@@ -62,7 +62,7 @@ export default function Certifications() {
                   {[
                     { label: "Quality Management", value: "ISO 9001:2015" },
                     { label: "Medical Devices QMS", value: "ISO 13485:2016" },
-                    { label: "Sterilization", value: "EO Sterilized" },
+                    { label: "Sterilization", value: "Gamma Radiation Sterilized" },
                     { label: "Manufacturing", value: "GIDC, Vapi" },
                   ].map((item) => (
                     <div key={item.label} className="bg-white/10 rounded-xl p-4">
